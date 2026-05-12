@@ -154,7 +154,7 @@ nav a:hover::after {
 .hero-visual {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     z-index: 2;
@@ -192,15 +192,15 @@ nav a:hover::after {
 
 .il-scene {
     position: relative;
-    width: 360px;
-    height: 360px;
+    width: 540px;
+    height: 540px;
     flex-shrink: 0;
 }
 
 .il-img {
     display: block;
-    width: 360px;
-    height: 360px;
+    width: 540px;
+    height: 540px;
     max-width: 90vw;
     max-height: 90vw;
     object-fit: contain;
