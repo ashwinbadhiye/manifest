@@ -192,9 +192,9 @@ nav a:hover::after {
 
 .il-scene {
     position: relative;
-    width: 100%;
-    max-width: 360px;
-    aspect-ratio: 1;
+    width: 360px;
+    height: 360px;
+    flex-shrink: 0;
 }
 
 .il-img {
@@ -912,6 +912,11 @@ section {
         width: 240px;
         height: 480px;
         border-radius: 30px;
+    }
+
+    .il-scene {
+        width: 280px;
+        height: 280px;
     }
 
     .footer-container {
