@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/)",
+      "Bash(curl -s -o /dev/null -w \" | img: %{http_code}\" \"http://localhost:8000/create_a_transparent_png_illustration_202605122107.jpeg\")",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(python -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(py --version)",
+      "Bash(py -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(py -m pip install Pillow -q)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8000/illustration.png)",
+      "Bash(git commit -m ' *)",
+      "Bash(git add *)",
+      "Bash(git push *)",
+      "WebFetch(domain:ashwinbadhiye.github.io)",
+      "Bash(curl -s \"https://ashwinbadhiye.github.io/manifest/index.html\")",
+      "Bash(curl -sI \"https://ashwinbadhiye.github.io/manifest/img1.png\")",
+      "Bash(curl -s \"https://ashwinbadhiye.github.io/manifest/style.css\")",
+      "Bash(taskkill /F /IM node.exe)",
+      "PowerShell(Stop-Process -Name node -Force)"
+    ]
+  }
+}

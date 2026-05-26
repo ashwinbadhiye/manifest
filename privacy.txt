@@ -1,0 +1,207 @@
+Manifest AI: Vision into Life
+Privacy Policy
+Effective Date: 24 May 2026    |    Last Updated: 24 May 2026
+This Privacy Policy explains in plain language what data we collect, why, where it goes, and what control you have. We recommend reading it fully. If anything is unclear, contact us at ashwinbadhiye@gmail.com.
+1. Who We Are
+Manifest AI: Vision into Life (the &quot;App&quot;) is operated by Ashwin Badhiye (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), an individual developer based in India. We act as the data fiduciary (controller) for personal data processed in connection with the App, as defined under the Digital Personal Data Protection Act, 2023 (DPDPA) of India and similar laws in other jurisdictions.
+Contact: ashwinbadhiye@gmail.com
+
+2. Scope of This Policy
+This Privacy Policy applies to your use of the Manifest AI: Vision into Life mobile application on iOS and Android, including any associated services, websites, and AI features. It does not apply to third-party services we link to or integrate with, which are governed by their own privacy policies (see Section 14).
+
+3. Information We Collect
+3.1 Information You Provide to Us
+Account information: your name (optional), email address, and authentication identifiers from Google Sign-In or Apple Sign-In if you choose social login
+Profile information: any optional profile details you add
+Goals: titles, descriptions, categories, and target dates
+Journal entries: free-form text reflections, mood/emotion selections, and timestamps you create
+Vision board images: photos you upload from your device gallery or camera
+Subscription information: tier (free, premium, or max) and entitlement status — note that payment details are handled directly by Apple or Google and we never see your card or banking details
+Reminder preferences: time of day and on/off state
+Communications: messages you send us (e.g. support requests)
+3.2 Information Collected Automatically
+Usage analytics: which screens you view, time spent on screens, features used, navigation flow, session duration, and in-app events — collected via Firebase Analytics
+Device information: device model, operating system version, app version, language, time zone, and approximate region (country/state) inferred from your IP address
+Performance data: app crashes, errors, and performance metrics — collected via Firebase Crashlytics
+Streak data: last activity date, current streak count, best streak count
+Advertising identifiers (free tier only): your device&apos;s advertising ID (AAID on Android, IDFA on iOS — only if you grant App Tracking Transparency permission on iOS)
+3.3 Information From Third Parties
+When you sign in with Google or Apple, we receive your name and email address (subject to permissions you grant in those providers&apos; consent screens). We do not receive your contacts, calendar, or other Google/Apple account data.
+3.4 Sensitive Personal Information
+Your journal entries may contain personal reflections including content about your emotions, relationships, financial situation, health, or other sensitive topics. We treat this content with extra care, store it encrypted at rest, and never use it for advertising, profiling, or any purpose beyond providing the App&apos;s features to you.
+
+4. Legal Basis for Processing (For Users in the EU / EEA / UK)
+If you are in the European Economic Area, the United Kingdom, or a similar jurisdiction, we rely on the following legal bases under the GDPR:
+Performance of a contract: to provide the App and its core features (Article 6(1)(b))
+Your consent: for optional features such as AI script generation, personalised ads, and notifications (Article 6(1)(a)) — you can withdraw consent at any time
+Legitimate interests: for security, fraud prevention, and improving the App in ways that do not override your rights and freedoms (Article 6(1)(f))
+Legal obligation: where required to comply with applicable law (Article 6(1)(c))
+
+5. How We Use Your Information
+We use the information we collect only to:
+Create and operate your account
+Provide the App&apos;s core features (goals, vision boards, journals, scripts, audio playback, streaks, reminders)
+Generate AI manifestation scripts when you specifically request them (see Section 6 for full AI disclosure)
+Send local push notifications you have opted into
+Serve non-personalised or personalised ads to free-tier users via Google AdMob (subject to your consent, where required)
+Analyse aggregated usage patterns to understand how the App is used and improve it
+Detect, prevent, and respond to security incidents, fraud, or abuse
+Respond to your support requests and communicate with you about the App
+Comply with applicable legal obligations
+We do not sell your personal data. We do not use your journal content for advertising or profiling. We do not share your journal content with any party except Google&apos;s Gemini API as strictly necessary to provide the AI feature you have requested (see Section 6).
+
+6. AI Features and Third-Party AI Disclosure
+This section is important. Please read it carefully before using the AI script generation feature. By tapping &quot;Generate Script&quot; in the App, you are giving explicit consent for the data flow described below.
+6.1 How AI Script Generation Works
+When — and only when — you tap &quot;Generate Script&quot; inside the App, the following data is sent via the Firebase AI Logic SDK directly from your device to Google&apos;s Gemini API to generate a personalised manifestation script:
+The title and description of the goal you are generating the script for
+Recent journal entries you have linked to that goal
+Any optional refinement instructions you provide
+Google&apos;s Gemini model processes this data and returns a generated script directly to your device. No intermediate server or cloud function is involved — the request goes from your device to Google&apos;s Gemini API and the response comes back directly. We do not retain copies of the data on our servers beyond what you have already saved (the journal entries themselves), and we do not review, read, or analyse the content of your prompts ourselves.
+6.2 What Google Does With Your Data
+Google&apos;s Gemini API is provided by Google LLC. How Google handles your data depends on the pricing tier:
+Free tier: Google may use prompts and outputs submitted through the Gemini Developer API free tier to improve its products and services, including AI model training. Data sent on the free tier may be reviewed by human reviewers at Google
+Paid tier: Google does NOT use your prompts or outputs for model training or product improvement when you are on the paid tier of the Gemini Developer API
+Google processes data in accordance with Google&apos;s Privacy Policy and Gemini API Terms of Service
+For full details on how Google handles Gemini API data, see ai.google.dev/gemini-api/terms and policies.google.com/privacy. We recommend reviewing these before using the AI feature.
+Important: Because the free tier allows Google to use your data for model improvement, we recommend avoiding including highly sensitive personal information in journal entries that will be used for AI script generation. When the App transitions to the paid tier of the Gemini API, this data-use-for-training provision will no longer apply.
+6.3 Your Consent and How to Opt Out
+AI script generation is an optional feature. You do not have to use it to use the rest of the App. If you do not want your data sent to Google&apos;s Gemini API, simply do not use the &quot;Generate Script&quot; feature. All other parts of the App (goals, vision boards, journals, streaks, reminders, native text-to-speech audio playback) work without any data being sent to the Gemini API.
+6.4 Data You Should Not Include
+Because AI scripts are generated from journal content, we strongly recommend that you do not include in your journal entries:
+Government identification numbers, financial account numbers, or passwords
+Information about other identifiable people without their consent
+Detailed health or medical information
+Information you would not want Google to process (especially on the free tier, where data may be used for model improvement)
+
+7. Sharing Your Information
+We share your information only in the following limited circumstances:
+Service providers acting on our behalf: Google (Firebase services and Gemini API for AI script generation, as described in Section 6), Apple/Google (for authentication and in-app purchases), and Google AdMob (free tier only) — see Section 14 for the complete list
+Legal requirements: if required by law, court order, or government request — we will challenge overbroad requests where reasonable
+Safety: to protect the rights, safety, and property of the App, our users, or the public
+Business transfers: in the event of a merger, acquisition, or sale of assets — you will be notified of any such transfer
+We never sell your personal data to advertisers, data brokers, or any third party.
+
+8. Advertising and Analytics (Free Tier)
+Free-tier users see advertisements served by Google AdMob. AdMob may collect and process:
+Your advertising identifier (AAID on Android, IDFA on iOS — only if you grant App Tracking Transparency permission)
+IP address and approximate location (country/region)
+Ad interaction data (impressions, clicks)
+8.1 iOS — App Tracking Transparency
+On iOS, we will request your permission via Apple&apos;s App Tracking Transparency (ATT) prompt before any tracking identifier (IDFA) is used to personalise ads across apps and websites. You can decline, and you can change your choice at any time in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.
+8.2 Android — Ad Personalisation Controls
+On Android, you can reset or delete your advertising ID and opt out of personalised ads in Settings &gt; Google &gt; Ads.
+8.3 EU / UK Consent
+If you are in the EU, UK, or another region requiring consent for advertising cookies and identifiers, we will display a consent banner powered by Google&apos;s User Messaging Platform (Consent Mode v2) on first launch. You can change your choices at any time inside the App&apos;s Settings.
+8.4 Premium Subscribers
+Paid subscribers do not see advertisements, and we do not collect advertising identifiers for premium accounts.
+
+9. Where Your Data Is Stored
+Your data is stored on Google Firebase infrastructure (operated by Google LLC). Firebase data centres are located in multiple regions worldwide. Where possible, we configure data to be stored in regions closest to our primary user base.
+If you are located outside India or the United States, your data may be transferred to and processed in regions where data protection laws may differ from those in your country. We rely on Google&apos;s Standard Contractual Clauses and equivalent safeguards for international transfers.
+
+10. How We Protect Your Data
+We use industry-standard security measures including:
+Encryption in transit using HTTPS / TLS
+Encryption at rest provided by Firebase infrastructure
+Authentication tokens stored on-device using your device&apos;s secure storage (iOS Keychain / Android Keystore)
+Access controls so that only authorised systems and personnel can access data
+Regular review of security practices
+No system is 100% secure. While we take reasonable steps to protect your data, we cannot guarantee absolute security.
+
+11. Data Retention
+Account data and content: retained for as long as your account is active
+If you delete your account: we will delete your personal data within 30 days, except where we are required to retain it for legal, accounting, or fraud-prevention purposes
+Anonymised analytics data: may be retained indefinitely as it cannot be used to identify you
+Crash logs: retained for up to 90 days
+Support communications: retained for up to 2 years after the request is resolved
+
+12. Your Rights
+Depending on your location, you may have the following rights regarding your personal data:
+12.1 Rights Available to All Users
+Access: request a copy of the personal data we hold about you
+Correction: request that we correct inaccurate or incomplete data
+Deletion: delete your account and associated personal data from inside the App (Settings &gt; Account &gt; Delete Account) or by emailing us
+Withdraw consent: stop using optional features such as AI generation or personalised ads at any time
+Portability: request a copy of your data in a portable format where technically feasible
+12.2 Additional Rights for EU / EEA / UK Users (GDPR)
+Restrict processing: request that we limit how we process your data
+Object to processing: object to processing based on legitimate interests
+Lodge a complaint: with your national data protection supervisory authority
+12.3 Additional Rights for California Users (CCPA / CPRA)
+Right to know what personal information we collect and how it is used
+Right to opt out of the sale or sharing of personal information (we do not sell your data)
+Right to limit use of sensitive personal information
+Right to non-discrimination for exercising your rights
+12.4 Additional Rights for Indian Users (DPDPA)
+Right to access and a summary of personal data being processed
+Right to correction, completion, updating, and erasure
+Right to grievance redressal (see Section 19)
+Right to nominate another person to exercise your rights in case of death or incapacity
+12.5 How to Exercise Your Rights
+To exercise any of these rights, you can:
+Use in-app controls (Settings &gt; Account)
+Email us at ashwinbadhiye@gmail.com
+We will respond within 30 days. Indian users have an additional escalation path via the Grievance Officer (Section 19) and the Data Protection Board of India.
+
+13. Children&apos;s Privacy
+Important: Manifest AI: Vision into Life is intended for general audiences but contains features (journaling, manifestation content) most suitable for users aged 13 and above. If you are a parent or guardian, please read this section carefully.
+13.1 Age Requirements by Region
+Children under 13 (United States): we do not knowingly collect personal information from children under 13 without verifiable parental consent, in accordance with the Children&apos;s Online Privacy Protection Act (COPPA)
+Children under 16 (EEA / EU member states with this threshold): we require verifiable parental consent in accordance with GDPR Article 8
+Children under 18 (India): under the DPDPA, we require verifiable parental consent for users under the age of 18
+13.2 Parental Consent Process
+Where applicable, during account creation, the App asks for the user&apos;s date of birth. If the user is below the applicable age threshold for their region, the App requires verifiable parental or guardian consent before account creation can proceed. The parent or guardian must confirm their consent via a verification email.
+13.3 Parental Controls
+Parents and guardians can:
+Review what personal information we have collected about their child by contacting ashwinbadhiye@gmail.com
+Request deletion of their child&apos;s data at any time
+Withdraw consent and discontinue the child&apos;s use of the App
+13.4 If You Believe a Child Has Used the App Without Consent
+If you are a parent or guardian and believe your child has provided us with personal information without your consent, please contact us immediately at ashwinbadhiye@gmail.com. We will promptly delete such information and the associated account.
+
+14. Third-Party Services We Use
+The App relies on the following third-party services, each governed by its own privacy policy:
+Google Firebase (Authentication, Firestore database, Cloud Functions, Analytics, Crashlytics, Cloud Messaging, Storage) — firebase.google.com/support/privacy
+Google Gemini API via Firebase AI Logic (AI script generation only, when you request it) — ai.google.dev/gemini-api/terms and policies.google.com/privacy
+Google AdMob (advertising on free tier) — policies.google.com/technologies/ads
+Google Sign-In — policies.google.com/privacy
+Apple Sign-In — apple.com/legal/privacy
+Apple App Store and Google Play Store (for app distribution and in-app purchases) — apple.com/legal/internet-services/itunes and play.google.com/about/privacy-security-policy
+We are not responsible for the privacy practices of these third parties.
+
+15. Cookies, Local Storage, and Similar Technologies
+The App does not use web cookies in the traditional sense. It does use:
+Secure on-device storage (iOS Keychain / Android Keystore) for authentication tokens
+Local app storage for cached preferences, drafts, and offline functionality
+Firebase analytics identifiers stored locally
+You can clear local app data by reinstalling the App or clearing app storage through your device settings.
+
+16. Notifications
+With your permission, we send local push notifications to remind you to journal, continue your streak, or return to the App. You can disable notifications at any time through your device settings or in the App&apos;s Settings. We do not send marketing emails unless you have explicitly opted in.
+
+17. Data Breach Notification
+If we become aware of a personal data breach that is likely to result in a risk to your rights and freedoms, we will:
+Notify affected users via in-app message and email within 72 hours of becoming aware, where feasible
+Notify the Data Protection Board of India and other applicable supervisory authorities in accordance with applicable law
+Provide information about the nature of the breach, the data involved, and steps you can take to protect yourself
+
+18. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes, we will:
+Update the &quot;Effective Date&quot; at the top
+Notify you through an in-app notification before the changes take effect
+For significant changes affecting how we use your data, ask for renewed consent where required
+Your continued use of the App after the effective date of any update constitutes your acceptance of the revised policy.
+
+19. Grievance Officer (For Indian Users)
+In accordance with the Digital Personal Data Protection Act, 2023 and the Information Technology Rules, 2011, the following individual is designated as the Grievance Officer for Manifest AI: Vision into Life:
+Name: Ashwin Badhiye
+Email: ashwinbadhiye@gmail.com
+Address: Nagpur, Maharashtra, India
+Indian users may contact the Grievance Officer with privacy-related complaints. We will acknowledge complaints within 48 hours and resolve them within 30 days. If you are not satisfied with our response, you may escalate to the Data Protection Board of India (once operational under DPDPA implementation rules).
+
+20. Contact Us
+If you have questions, concerns, or requests regarding this Privacy Policy or our handling of your data, please contact us:
+Email: ashwinbadhiye@gmail.com
+Subject line: &quot;Privacy Inquiry – Manifest AI: Vision into Life&quot;
+We will respond within 30 days, or sooner where required by applicable law.
