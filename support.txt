@@ -1,0 +1,105 @@
+Manifest AI: Vision into Life — FAQ
+
+1. Account & Privacy
+
+How do I delete my account?
+Open the app and go to Profile or Settings.
+Scroll to the bottom and tap Account.
+Tap Delete Account.
+Confirm your choice when prompted.
+Your account will be permanently deleted. This action cannot be undone.
+If you face any issues, email us at ashwinbadhiye@gmail.com and we will process the deletion within 7 working days.
+
+Is my data being stored anywhere?
+Your journal entries are stored only on your device. They never leave your phone and are never sent to our servers or any third party. Generated manifestation scripts are temporarily processed by AI to create your output and are not stored or used to train any model. We do not sell, share, or monetise your personal data.
+
+What data does Manifest AI collect?
+We collect only the minimum data needed to run the app:
+App usage data for performance and crash reporting (anonymised).
+We created an unique ID for your account on our own (anonymised). 
+
+Your name and email address is not collected by the application.
+Your goals and deadlines are not collected by the application.
+We do not collect or store your journal entries. They stay on your device at all times.
+
+
+
+
+2.AI & Generation
+
+How does the AI manifestation script generation work?
+Open a goal you have created.
+Tap Generate Script Icon (purple).
+The app sends your goal and goal description to our AI engine.
+The AI crafts a short, personalised first-person manifestation script based on your inputs.
+Your script is returned to the app and saved in your script library.
+Tap Play to listen to your script as calming audio.
+
+
+Is the AI script personalised to me?
+Yes. Every script is generated using your specific goal description and your deadline, context you have written. The AI does not use generic templates — it uses your own words and intentions to write something that feels personal, grounded, and relevant to where you actually are.
+
+How long is a generated script?
+Scripts are typically 80–150 words, designed to be short enough to listen to in 1–2 minutes. This keeps your daily ritual simple and sustainable.
+
+Can I regenerate a script?
+Yes. You can generate a new script for the same goal at any time. Each version is saved in your script library so you can revisit older ones too.
+
+Does the AI learn from my goal entries or store them?
+No. Your goal entries are only sent to the AI at the moment you tap Generate, purely to create your script. They are not stored on our servers, not saved in any database, and not used to train any AI model.
+
+
+
+
+
+3. Audio & Playback
+
+How does the audio playback work?
+Once your script is generated, tap the Play button on any script card. The app will read your script aloud in a calm, steady voice. You can listen during your morning routine, commute, study session, or before bed.
+
+Can I choose different voices?
+Voice options are available depending on the device and operating system you are using.
+
+
+
+4. Goals & Journal
+
+How do I create a goal?
+Go to your Manifestation Tab.
+Click on the plus icon.
+Enter your goal title and a short description.
+Set a target deadline.
+Tap Save.
+Your goal is now ready and you can start generating scripts for it.
+
+
+What should I write in my journal?
+Write honestly. There are no rules. You can write how you feel today, what progress you have made, what fears or doubts you have, what you are grateful for, or what your next step is. 
+
+Is my journal private?
+Yes, completely. Your journal entries are stored only on your phone. No one else can read them — not our team, not any AI system.
+
+Is Manifest AI free to use?
+Manifest AI offers a free tier with core features. A Premium and Max subscription unlocks goals, script generation, full script history, and additional features. Pricing is shown in the app.
+
+
+How do I cancel my subscription?
+iOS: Go to iPhone Settings → Apple ID → Subscriptions → Manifest AI → Cancel.
+Android: Open Google Play → tap your profile → Payments & Subscriptions → Subscriptions → Manifest AI → Cancel.
+Cancellation stops future billing. You retain premium access until the end of your current billing period.
+
+
+Do you offer refunds?
+Refund requests follow the App Store and Google Play refund policies. For billing issues contact us at support@[yourdomain].com and we will do our best to help.
+
+
+
+
+5. Technical
+
+Which devices does Manifest AI support?
+Manifest AI is available on iOS and Android smartphones. An internet connection is required only for account login and AI script generation.
+
+
+How do I contact support?
+Email us at ashwinbadhiye@gmail.com or use the Help option inside the app under Settings. We aim to respond within 24–48 hours.
