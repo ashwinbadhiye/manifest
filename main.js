@@ -109,12 +109,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!targetId) return;
 
             if (targetId.startsWith('#')) {
-                e.preventDefault();
                 const type = targetId.substring(1);
                 if (contents[type]) {
+                    e.preventDefault();
                     modalContent.innerHTML = contents[type];
                     modalOverlay.classList.add('active');
                     document.body.style.overflow = 'hidden';
+                } else if (type && document.getElementById(type)) {
+                    // In-page navigation (About, Features, etc.)
+                    e.preventDefault();
+                    document.getElementById(type).scrollIntoView({ behavior: 'smooth' });
                 }
             }
         });
@@ -122,9 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const handleClose = () => {
         modalOverlay.classList.remove('active');
-        if (!document.body.classList.contains('home')) {
-            document.body.style.overflow = 'auto';
-        }
+        document.body.style.overflow = '';
     };
 
     if (closeModal) closeModal.addEventListener('click', handleClose);
@@ -146,4 +148,78 @@ document.addEventListener('DOMContentLoaded', () => {
             blob.style.transform = `translate(${x}px, ${y}px)`;
         });
     });
+
+    // Screenshots gallery — smooth momentum wheel + drag to scroll
+    const scroller = document.querySelector('.screens-scroller');
+    if (scroller) {
+        let targetX = null;
+        let rafId = null;
+        const ease = 0.15;
+
+        const maxScroll = () => scroller.scrollWidth - scroller.clientWidth;
+
+        const animate = () => {
+            const cur = scroller.scrollLeft;
+            const diff = targetX - cur;
+            if (Math.abs(diff) < 0.5) {
+                scroller.scrollLeft = targetX;
+                targetX = null;
+                rafId = null;
+                return;
+            }
+            scroller.scrollLeft = cur + diff * ease;
+            rafId = requestAnimationFrame(animate);
+        };
+
+        // Vertical wheel → smooth horizontal, released to the page at the edges
+        scroller.addEventListener('wheel', (e) => {
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return; // native horizontal (trackpad)
+            const max = maxScroll();
+            const base = targetX == null ? scroller.scrollLeft : targetX;
+            if ((e.deltaY < 0 && base <= 0) || (e.deltaY > 0 && base >= max - 1)) return; // let page scroll
+            e.preventDefault();
+            targetX = Math.max(0, Math.min(max, base + e.deltaY));
+            if (rafId == null) rafId = requestAnimationFrame(animate);
+        }, { passive: false });
+
+        // Pointer drag to scroll (desktop click-drag + touch), direct 1:1
+        let isDown = false, startX = 0, startScroll = 0;
+        scroller.addEventListener('pointerdown', (e) => {
+            if (e.pointerType === 'mouse' && e.button !== 0) return;
+            isDown = true;
+            if (rafId != null) { cancelAnimationFrame(rafId); rafId = null; targetX = null; }
+            startX = e.clientX;
+            startScroll = scroller.scrollLeft;
+            try { scroller.setPointerCapture(e.pointerId); } catch (err) {}
+        });
+        scroller.addEventListener('pointermove', (e) => {
+            if (!isDown) return;
+            const dx = e.clientX - startX;
+            if (Math.abs(dx) > 4) scroller.classList.add('dragging');
+            scroller.scrollLeft = startScroll - dx;
+        });
+        const endDrag = () => {
+            isDown = false;
+            scroller.classList.remove('dragging');
+        };
+        scroller.addEventListener('pointerup', endDrag);
+        scroller.addEventListener('pointercancel', endDrag);
+        scroller.addEventListener('pointerleave', endDrag);
+    }
+
+    // Reveal sections on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    if (revealEls.length && 'IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => io.observe(el));
+    } else {
+        revealEls.forEach(el => el.classList.add('visible'));
+    }
 });

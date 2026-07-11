@@ -12,6 +12,7 @@ const MIME_TYPES = {
     '.jpg': 'image/jpeg',
     '.gif': 'image/gif',
     '.svg': 'image/svg+xml',
+    '.webp': 'image/webp',
 };
 
 const server = http.createServer((req, res) => {
@@ -21,6 +22,9 @@ const server = http.createServer((req, res) => {
     
     if (filePath === './') {
         filePath = './index.html';
+    } else if (filePath.endsWith('/')) {
+        // Serve directory index (e.g. /get/ -> /get/index.html), matching GitHub Pages
+        filePath += 'index.html';
     }
 
     const extname = String(path.extname(filePath)).toLowerCase();

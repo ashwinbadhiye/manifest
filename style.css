@@ -35,8 +35,7 @@ body {
 }
 
 body.home {
-    height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Titles - Cormorant Garamond */
@@ -1091,5 +1090,327 @@ section {
     }
     .legal-callout {
         padding: 1.2rem 1.5rem;
+    }
+}
+
+/* ============================================================
+   Home Content Sections — About / Features / Screens / Download
+   ============================================================ */
+
+/* Let the home page scroll past the hero, footer flows at the end */
+body.home .sky-background { height: 100%; }
+body.home .main-footer { position: static; }
+
+.home-section {
+    position: relative;
+    z-index: 2;
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Full-height home sections (desktop) */
+#about,
+#features,
+#screens,
+#download {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 5%;
+    scroll-margin-top: 70px;
+}
+
+
+.section-label {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    font-size: 0.78rem;
+    color: var(--accent-gold);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    text-align: center;
+    color: var(--accent-deep);
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.section-heading em {
+    font-style: italic;
+    color: var(--accent-gold);
+}
+
+.section-sub {
+    text-align: center;
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* --- About --- */
+.about-pillars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.2rem;
+}
+
+.about-pillar {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    border-radius: 100px;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent-deep);
+    backdrop-filter: blur(10px);
+}
+
+.about-pillar svg {
+    width: 18px;
+    height: 18px;
+    color: var(--accent-gold);
+    flex-shrink: 0;
+}
+
+/* --- Features Grid --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 22px;
+    padding: 2.2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: var(--transition-smooth);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 26px 50px rgba(0, 0, 0, 0.07);
+}
+
+.feature-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(197, 160, 89, 0.18), rgba(225, 239, 252, 0.5));
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    color: var(--accent-gold);
+    margin-bottom: 1.4rem;
+}
+
+.feature-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-deep);
+    margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+/* --- Screens Gallery --- */
+.screens-scroller {
+    display: flex;
+    gap: 1.8rem;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 2.5rem 0 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    cursor: grab;
+}
+
+.screens-scroller.dragging {
+    cursor: grabbing;
+}
+
+.screens-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.screen-card img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.screens-scroller.dragging .screen-card {
+    pointer-events: none;
+}
+
+.screen-card {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 28px;
+    overflow: hidden;
+    scroll-snap-align: center;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: var(--transition-smooth);
+}
+
+.screen-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.14);
+}
+
+.screen-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.screens-hint {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+
+/* --- Download CTA --- */
+.download-inner {
+    background: linear-gradient(135deg, rgba(225, 239, 252, 0.6), rgba(255, 244, 225, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 36px;
+    padding: 4.5rem 2rem;
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-soft);
+}
+
+.download-inner .store-buttons {
+    justify-content: center;
+    animation: none;
+    opacity: 1;
+    transform: none;
+    margin-top: 2.5rem;
+}
+
+.download-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 2.5rem;
+}
+
+.download-qr img {
+    width: 120px;
+    height: 120px;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    border-radius: 16px;
+}
+
+.qr-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* Phones tap the badges directly — the scan prompt is for desktop */
+@media (max-width: 560px) {
+    .download-qr {
+        display: none;
+    }
+}
+
+/* --- Reveal on scroll --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Full 100vh with 6 stacked feature cards would crop on phones — let it grow */
+    #features {
+        min-height: auto;
+        padding: 5rem 6%;
+    }
+    #about,
+    #download {
+        padding: 5rem 6%;
+    }
+    .section-heading {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+    .section-sub {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-card {
+        padding: 1.8rem;
+    }
+    .screen-card {
+        width: 82vw;
+        max-width: 320px;
+    }
+    .download-inner {
+        padding: 3rem 1.5rem;
+    }
+    .about-pillars {
+        flex-direction: column;
+        align-items: center;
     }
 }
